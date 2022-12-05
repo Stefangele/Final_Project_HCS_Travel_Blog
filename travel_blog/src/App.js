@@ -6,6 +6,7 @@ import Hero from "./Hero";
 import TravelLocationsOverviewAndWorldMap from "./TravelLocationsOverviewAndWorldMap";
 import Footer from "./Footer";
 import ColorBlock from "./ColorBlock";
+import TravelCardDetailPage from "./TravelCardDetailPage";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <ColorBlock />
       <TravelLocationsOverviewAndWorldMap />
       <Footer />
+      <TravelCardDetailPage />
     </>
   );
 }
