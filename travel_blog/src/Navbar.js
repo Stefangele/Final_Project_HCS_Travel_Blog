@@ -1,3 +1,5 @@
+import { FaDoorOpen, FaEdit } from "react-icons/fa";
+
 function Navbar() {
   return (
     <nav className="navbar" role="navigation" aria-label="main navigation">
@@ -29,9 +31,13 @@ function Navbar() {
           <div className="navbar-item">
             <div className="buttons">
               <a className="button is-success">
-                <strong>New Post</strong>
+                <strong>
+                  <FaEdit /> &nbsp;New Post
+                </strong>
               </a>
-              <a className="button is-dark">Log in</a>
+              <a className="button is-dark">
+                <FaDoorOpen /> &nbsp;&nbsp;Log in
+              </a>
             </div>
           </div>
         </div>
