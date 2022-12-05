@@ -1,4 +1,6 @@
 import { FaDoorOpen, FaEdit } from "react-icons/fa";
+import { Link, Route } from "wouter";
+import Contact from "./Contact";
 
 function Navbar() {
   return (
@@ -27,7 +29,9 @@ function Navbar() {
         </div>
 
         <div className="navbar-end">
-          <a className="navbar-item">Contact</a>
+          <Link href="/contact">
+            <a className="navbar-item">Contact</a>
+          </Link>
           <div className="navbar-item">
             <div className="buttons">
               <a className="button is-success">
@@ -42,6 +46,7 @@ function Navbar() {
           </div>
         </div>
       </div>
+      <Route path="/contact" component={Contact} />
     </nav>
   );
 }

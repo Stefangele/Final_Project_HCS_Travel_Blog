@@ -4,10 +4,7 @@ function TravelCard() {
       <div className="card">
         <div className="card-image">
           <figure className="image is-4by3">
-            <img
-              src="https://bulma.io/images/placeholders/1280x960.png"
-              alt="Main Image"
-            />
+            <img src="/pictures_travellocations/image13.JPG" alt="Main Image" />
           </figure>
         </div>
         <div className="card-content">
@@ -25,11 +22,8 @@ function TravelCard() {
           </div>
 
           <div className="content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-            nec iaculis mauris. <a>@bulmaio</a>.<a href="#">#css</a>{" "}
-            <a href="#">#responsive</a>
-            <br />
-            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+            Here is some intro text displayed to give some additional
+            information
           </div>
         </div>
       </div>
