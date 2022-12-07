@@ -1,10 +1,41 @@
+import { useEffect, useState } from "react";
+
 function TravelCard() {
+  const [travelDestination, setTravelDestination] = useState({});
+
+  useEffect(() => {
+    const endpoint = "/travellocations.json";
+    fetch(endpoint)
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (result) {
+        console.log(result);
+        const travelcardObject = {
+          continent: result?.continent,
+          country: result?.country,
+          city: result?.city,
+          imagesrc: result?.image,
+          traveldate: result?.traveldate,
+          description: result?.description,
+        };
+        setTravelDestination(travelcardObject);
+        console.log(travelDestination);
+      })
+      .catch(function (error) {
+        console.error("Something went wrong", error);
+      });
+  }, []);
+
   return (
     <div className="tile is-parent box is-6">
       <div className="card">
         <div className="card-image">
           <figure className="image is-4by3">
-            <img src="/pictures_travellocations/image13.JPG" alt="Main Image" />
+            <img
+              src={travelDestination?.imagesrc}
+              alt={travelDestination?.city}
+            />
           </figure>
         </div>
         <div className="card-content">
@@ -16,15 +47,12 @@ function TravelCard() {
               </figure>
             </div>
             <div className="media-content">
-              <p className="title is-4">Hamburg</p>
-              <p className="subtitle is-6">Visited: May 2022</p>
+              <p className="title is-4">{travelDestination?.city}</p>
+              <p className="subtitle is-6">{travelDestination?.traveldate}</p>
             </div>
           </div>
 
-          <div className="content">
-            Here is some intro text displayed to give some additional
-            information
-          </div>
+          <div className="content">{travelDestination?.description}</div>
         </div>
       </div>
     </div>
