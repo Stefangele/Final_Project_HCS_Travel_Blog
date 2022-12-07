@@ -46,7 +46,6 @@ function Navbar() {
           </div>
         </div>
       </div>
-      <Route path="/contact" component={Contact} />
     </nav>
   );
 }

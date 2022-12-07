@@ -7,14 +7,23 @@ import TravelLocationsOverviewAndWorldMap from "./TravelLocationsOverviewAndWorl
 import Footer from "./Footer";
 import ColorBlock from "./ColorBlock";
 import TravelCardDetailPage from "./TravelCardDetailPage";
+import { Route, Switch } from "wouter";
+import Contact from "./Contact";
 
 function App() {
   return (
     <>
       <Navbar />
-      <Hero />
-      <ColorBlock />
-      <TravelLocationsOverviewAndWorldMap />
+      <Switch>
+        <Route path="/contact" component={Contact} />
+        <Route>
+          <>
+            <Hero />
+            <ColorBlock />
+            <TravelLocationsOverviewAndWorldMap />
+          </>
+        </Route>
+      </Switch>
       <Footer />
       <TravelCardDetailPage />
     </>

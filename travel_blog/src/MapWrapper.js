@@ -1,7 +1,8 @@
 import React, { useRef, useEffect, useState } from "react";
 import "mapbox-gl/dist/mapbox-gl.css";
 import "./Map.css";
-// import geoJson from "./chicago-parks.json";
+
+import geoJson from "./chicago-parks.json";
 
 import mapboxgl from "!mapbox-gl"; // eslint-disable-line import/no-webpack-loader-syntax
 
@@ -23,6 +24,11 @@ function MapWrapper() {
       center: [lng, lat],
       zoom: zoom,
     });
+    geoJson.features.map((feature) =>
+      new mapboxgl.Marker()
+        .setLngLat(feature.geometry.coordinates)
+        .addTo(map.current)
+    );
   });
 
   useEffect(() => {
@@ -33,10 +39,6 @@ function MapWrapper() {
       setZoom(map.current.getZoom().toFixed(2));
     });
   });
-
-  // geoJson.features.map((feature) =>
-  //   new mapboxgl.Marker().setLngLat(feature.geometry.coordinates).addTo(map)
-  // );
 
   return (
     <div className="column">

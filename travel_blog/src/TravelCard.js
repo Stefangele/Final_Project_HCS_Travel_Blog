@@ -19,13 +19,18 @@ function TravelCard() {
           traveldate: result?.traveldate,
           description: result?.description,
         };
-        setTravelDestination(travelcardObject);
+        console.log("Hello", travelcardObject);
+        setTravelDestination(result);
         console.log(travelDestination);
       })
       .catch(function (error) {
         console.error("Something went wrong", error);
       });
   }, []);
+
+  useEffect(() => {
+    console.log("State", travelDestination);
+  }, [travelDestination]);
 
   return (
     <div className="tile is-parent box is-6">

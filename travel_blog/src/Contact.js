@@ -22,14 +22,6 @@ function Contact() {
           </div>
         </div>
       </div>
-      <div className="is-relative">
-        <img
-          className="image is-fullwidth is-cover"
-          style={{ height: "448px" }}
-          src="X"
-          alt=""
-        />
-      </div>
     </section>
   );
 }
