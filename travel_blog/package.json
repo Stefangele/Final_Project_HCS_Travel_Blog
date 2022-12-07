@@ -12,7 +12,8 @@
     "react-icons": "^4.7.1",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4",
-    "wouter": "^2.9.0"
+    "wouter": "^2.9.0",
+    "mapbox-gl": "^2.9.2"
   },
   "scripts": {
     "start": "react-scripts start",

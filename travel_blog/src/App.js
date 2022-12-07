@@ -1,5 +1,5 @@
-import logo from "./logo.svg";
 import "./App.css";
+import "mapbox-gl/dist/mapbox-gl.css";
 import "bulma/css/bulma.min.css";
 import Navbar from "./Navbar";
 import Hero from "./Hero";
