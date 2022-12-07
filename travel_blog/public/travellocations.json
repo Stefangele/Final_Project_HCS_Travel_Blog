@@ -7,5 +7,41 @@
     "flag": "https://flagicons.lipis.dev/flags/4x3/de.svg",
     "description": "Simply wonderful. Visit as fast as possible. Sunsets around Alster or Elbe are always great!",
     "traveldate": "20.06.21 - 25.06.21"
+  },
+  {
+    "image": "/pictures_travellocations/image14.JPG",
+    "continent": "Europe",
+    "country": "Germany",
+    "city": "Berlin",
+    "flag": "https://flagicons.lipis.dev/flags/4x3/de.svg",
+    "description": "Intro text blablabala",
+    "traveldate": "20.06.20 - 25.06.20"
+  },
+  {
+    "image": "/pictures_travellocations/image15.JPG",
+    "continent": "Europe",
+    "country": "Germany",
+    "city": "Erfurt",
+    "flag": "https://flagicons.lipis.dev/flags/4x3/de.svg",
+    "description": "Yeahhhh Intro text blablabala",
+    "traveldate": "20.06.22 - 25.06.22"
+  },
+  {
+    "image": "/pictures_travellocations/image16.JPG",
+    "continent": "Europe",
+    "country": "Germany",
+    "city": "Stuttgart",
+    "flag": "https://flagicons.lipis.dev/flags/4x3/de.svg",
+    "description": "Bli bla bluppppppppppp",
+    "traveldate": "20.06.19 - 25.06.19"
+  },
+  {
+    "image": "/pictures_travellocations/image17.JPG",
+    "continent": "Europe",
+    "country": "Germany",
+    "city": "Köln",
+    "flag": "https://flagicons.lipis.dev/flags/4x3/de.svg",
+    "description": "Jaaaaaaaaaa ganz ganz toll",
+    "traveldate": "20.06.18 - 25.06.18"
   }
 ]
