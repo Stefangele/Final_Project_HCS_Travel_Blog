@@ -1,18 +1,5 @@
-.map-container {
-  height: 1000px;
-}
-
-.sidebar {
-  background-color: #48c78e;
-  color: #fff;
-  padding: 6px 12px;
-  font-family: monospace;
-  z-index: 1;
-  position: relative;
-  top: 0;
-  left: 0;
-  margin: 12px;
-  border-radius: 4px;
-  border-color: rgba(35, 55, 75, 0.9);
-  border-style: solid;
+.marker-button {
+  background: none;
+  border: none;
+  cursor: pointer;
 }

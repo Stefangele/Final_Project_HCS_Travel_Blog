@@ -1,5 +1,8 @@
 [
   {
+    "id": 1,
+    "longitude": 9.99,
+    "latitude": 53.55,
     "image": "/pictures_travellocations/image13.JPG",
     "continent": "Europe",
     "country": "Germany",
@@ -9,6 +12,9 @@
     "traveldate": "20.06.21 - 25.06.21"
   },
   {
+    "id": 2,
+    "longitude": 19.99,
+    "latitude": 50.55,
     "image": "/pictures_travellocations/image14.JPG",
     "continent": "Europe",
     "country": "Germany",
@@ -18,6 +24,9 @@
     "traveldate": "20.06.20 - 25.06.20"
   },
   {
+    "id": 3,
+    "longitude": 15.99,
+    "latitude": 45.55,
     "image": "/pictures_travellocations/image15.JPG",
     "continent": "Europe",
     "country": "Germany",
@@ -27,6 +36,9 @@
     "traveldate": "20.06.22 - 25.06.22"
   },
   {
+    "id": 4,
+    "longitude": 18.99,
+    "latitude": 40.55,
     "image": "/pictures_travellocations/image16.JPG",
     "continent": "Europe",
     "country": "Germany",
@@ -36,10 +48,25 @@
     "traveldate": "20.06.19 - 25.06.19"
   },
   {
+    "id": 5,
+    "longitude": 21.99,
+    "latitude": 39.55,
     "image": "/pictures_travellocations/image17.JPG",
     "continent": "Europe",
     "country": "Germany",
     "city": "Köln",
+    "flag": "https://flagicons.lipis.dev/flags/4x3/de.svg",
+    "description": "Jaaaaaaaaaa ganz ganz toll",
+    "traveldate": "20.06.18 - 25.06.18"
+  },
+  {
+    "id": 5,
+    "longitude": 25.99,
+    "latitude": 44.55,
+    "image": "/pictures_travellocations/image18.JPG",
+    "continent": "Europe",
+    "country": "Germany",
+    "city": "Rutesheim",
     "flag": "https://flagicons.lipis.dev/flags/4x3/de.svg",
     "description": "Jaaaaaaaaaa ganz ganz toll",
     "traveldate": "20.06.18 - 25.06.18"
