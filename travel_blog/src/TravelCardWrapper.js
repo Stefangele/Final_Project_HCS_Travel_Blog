@@ -10,12 +10,12 @@ function TravelCardWrapper() {
         </h2>
       </div>
       <div className="tile is-ancestor is-flex-wrap-wrap">
-        {
-          Array.from(Array(1)).map((_, i) => (
+        {Array.from(Array(1)).map(
+          (_, i) => (
             <TravelCard key={i} id={i} />
-          ))
-          // .sort((a, b) => b.traveldate - a.traveldate)
-        }
+          ),
+          travelCardData.sort((a, b) => b.traveldate - a.traveldate)
+        )}
       </div>
     </div>
   );

@@ -9,9 +9,9 @@ import { Link } from "wouter";
 function MapOverview() {
   const [selectedMarker, setSelectedMarker] = useState(null);
   const viewport = {
-    longitude: travelLocationData[travelLocationData.length - 1]?.longitude,
-    latitude: travelLocationData[travelLocationData.length - 1]?.latitude,
-    zoom: 10,
+    longitude: travelLocationData[0]?.longitude,
+    latitude: travelLocationData[0]?.latitude,
+    zoom: 11,
   };
 
   const pins = useMemo(
@@ -90,20 +90,3 @@ function MapOverview() {
 }
 
 export default MapOverview;
-
-//   longitude={9.99}
-//   latitude={53.55}
-//   anchor="bottom"
-//   onClick={handleMarkerClick}
-// >
-
-/* {showPopup && (
-          <Popup
-            longitude={9.99}
-            latitude={53.55}
-            anchor="bottom"
-            onClose={() => setShowPopup(false)}
-          >
-            You are here
-          </Popup>
-        )} */
