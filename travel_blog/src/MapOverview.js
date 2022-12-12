@@ -8,12 +8,17 @@ import { Link } from "wouter";
 
 function MapOverview() {
   const [selectedMarker, setSelectedMarker] = useState(null);
+  const viewport = {
+    longitude: travelLocationData[travelLocationData.length - 1]?.longitude,
+    latitude: travelLocationData[travelLocationData.length - 1]?.latitude,
+    zoom: 10,
+  };
 
   const pins = useMemo(
     () =>
       travelLocationData.map((travelLocation) => (
         <Marker
-          key={travelLocation.id}
+          markerKey={travelLocation.id}
           longitude={travelLocation.longitude}
           latitude={travelLocation.latitude}
           anchor="bottom"
@@ -31,11 +36,7 @@ function MapOverview() {
   return (
     <div>
       <Map
-        initialViewState={{
-          longitude: 9.99,
-          latitude: 53.55,
-          zoom: 4,
-        }}
+        initialViewState={viewport}
         style={{ width: "100%", height: 1750 }}
         mapboxAccessToken={
           "pk.eyJ1IjoiYW5nZWxlc3RmIiwiYSI6ImNsYmRrcXpsODAyZmEzcmxkaDdsb25ycmYifQ.8HZcPY7Qw_pMHxiIlSipPQ"
@@ -63,7 +64,7 @@ function MapOverview() {
                 <div className="media">
                   <div className="media-left">
                     <figure className="image is-64x64">
-                      <img src="/author_image_cropped.png" alt="Author Image" />
+                      <img src="/author_image_cropped.png" alt="Author" />
                       <p className="is-size-7">Stefan Angele</p>
                     </figure>
                   </div>
@@ -74,9 +75,9 @@ function MapOverview() {
                     <p className="is-size-6 ">{selectedMarker.traveldate}</p>
                   </div>
                 </div>
-                <div class="box has-text-centered">
+                <div class="has-text-centered">
                   <Link href={`/cities/${selectedMarker.id - 1}`}>
-                    <button class="button is-success">See more</button>
+                    <button className="button is-success">See more</button>
                   </Link>
                 </div>
               </div>

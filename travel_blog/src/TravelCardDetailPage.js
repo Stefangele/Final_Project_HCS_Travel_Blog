@@ -1,7 +1,17 @@
 import travelCardData from "./travellocations.json";
 import { Link } from "wouter";
+import Map, { Marker } from "react-map-gl";
+import "mapbox-gl/dist/mapbox-gl.css";
+import "./Map.css";
+import Pin from "./Pin";
 
 function TravelCardDetailPage({ id }) {
+  const viewport = {
+    longitude: travelCardData[id]?.longitude,
+    latitude: travelCardData[id]?.latitude,
+    zoom: 10,
+  };
+
   return (
     <div>
       <section class="hero is-fullheight is-primary is-bold ">
@@ -61,6 +71,23 @@ function TravelCardDetailPage({ id }) {
           </div>
         </div>
       </section>
+      <Map
+        initialViewState={viewport}
+        style={{ width: "100%", height: 500 }}
+        mapboxAccessToken={
+          "pk.eyJ1IjoiYW5nZWxlc3RmIiwiYSI6ImNsYmRrcXpsODAyZmEzcmxkaDdsb25ycmYifQ.8HZcPY7Qw_pMHxiIlSipPQ"
+        }
+        mapStyle="mapbox://styles/angelestf/clbf50lon002v15nupgjr7stk"
+        cursor="move"
+      >
+        <Marker
+          longitude={travelCardData[id]?.longitude}
+          latitude={travelCardData[id]?.latitude}
+          anchor="bottom"
+        >
+          <Pin />
+        </Marker>
+      </Map>
     </div>
   );
 }

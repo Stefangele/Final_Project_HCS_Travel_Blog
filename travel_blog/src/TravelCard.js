@@ -15,7 +15,7 @@ function TravelCard() {
             <div className="media">
               <div className="media-left">
                 <figure className="image is-96x96">
-                  <img src="/author_image_cropped.png" alt="Author Image" />
+                  <img src="/author_image_cropped.png" alt="Author" />
                   <p className="is-size-7">By Stefan Angele</p>
                 </figure>
               </div>
