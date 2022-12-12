@@ -50,6 +50,7 @@ function MapOverview() {
             latitude={selectedMarker.latitude}
             longitude={selectedMarker.longitude}
             maxWidth="700px"
+            onClose={() => setSelectedMarker(null)}
           >
             <div className="card">
               <div className="card-image">

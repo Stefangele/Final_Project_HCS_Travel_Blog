@@ -6,10 +6,11 @@ function Navbar() {
   return (
     <nav className="navbar" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
-        <a className="navbar-item" href="#">
-          <img src="/Logo.jpg" width="100" height="100" />
-        </a>
-
+        <Link href="/">
+          <a className="navbar-item">
+            <img src="/Logo.jpg" width="100" height="100" />
+          </a>
+        </Link>
         <a
           role="button"
           className="navbar-burger"
@@ -25,7 +26,9 @@ function Navbar() {
 
       <div id="navbarBasicExample" className="navbar-menu">
         <div className="navbar-start">
-          <a className="navbar-item">Nature Travel Blog</a>
+          <Link href="/">
+            <a className="navbar-item">Nature Travel Blog</a>
+          </Link>
         </div>
 
         <div className="navbar-end">

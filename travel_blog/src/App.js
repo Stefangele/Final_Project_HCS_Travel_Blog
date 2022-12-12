@@ -15,17 +15,20 @@ function App() {
     <>
       <Navbar />
       <Switch>
-        <Route path="/contact" component={Contact} />
-        <Route>
+        <Route path="/">
           <>
             <Hero />
             <ColorBlock />
             <TravelLocationsOverviewAndWorldMap />
           </>
         </Route>
+        <Route path="/contact" component={Contact} />
+        <Route path="/cities/:id">
+          {(params) => <TravelCardDetailPage id={params.id} />}
+        </Route>
+        <Route>404 page</Route>
       </Switch>
       <Footer />
-      <TravelCardDetailPage />
     </>
   );
 }
