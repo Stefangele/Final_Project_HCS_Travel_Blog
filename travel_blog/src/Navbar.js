@@ -1,6 +1,5 @@
 import { FaDoorOpen, FaEdit } from "react-icons/fa";
-import { Link, Route } from "wouter";
-import Contact from "./Contact";
+import { Link } from "wouter";
 
 function Navbar() {
   return (

@@ -10,7 +10,7 @@ function TravelCardWrapper() {
       </div>
       <div className="tile is-ancestor is-flex-wrap-wrap">
         {Array.from(Array(1)).map((_, i) => (
-          <TravelCard travelcardKey={i} />
+          <TravelCard key={i} id={i} />
         ))}
       </div>
     </div>

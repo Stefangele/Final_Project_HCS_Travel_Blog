@@ -4,6 +4,7 @@ import travelLocationData from "./travellocations.json";
 import "./Map.css";
 import { useState, useMemo } from "react";
 import Pin from "./Pin";
+import { Link } from "wouter";
 
 function MapOverview() {
   const [selectedMarker, setSelectedMarker] = useState(null);
@@ -33,7 +34,7 @@ function MapOverview() {
         initialViewState={{
           longitude: 9.99,
           latitude: 53.55,
-          zoom: 7,
+          zoom: 4,
         }}
         style={{ width: "100%", height: 1750 }}
         mapboxAccessToken={
@@ -74,7 +75,9 @@ function MapOverview() {
                   </div>
                 </div>
                 <div class="box has-text-centered">
-                  <button class="button is-success">See more</button>
+                  <Link href={`/cities/${selectedMarker.id - 1}`}>
+                    <button class="button is-success">See more</button>
+                  </Link>
                 </div>
               </div>
             </div>

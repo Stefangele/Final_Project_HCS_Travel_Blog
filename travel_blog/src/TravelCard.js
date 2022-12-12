@@ -1,7 +1,8 @@
 import travelCardData from "./travellocations.json";
+import { Link } from "wouter";
 
 function TravelCard() {
-  return travelCardData.map((travelCard) => (
+  return travelCardData.map((travelCard, id) => (
     <>
       <div className="tile is-parent box is-6">
         <div className="card">
@@ -24,6 +25,9 @@ function TravelCard() {
               </div>
             </div>
             <div className="content">{travelCard.description}</div>
+            <Link href={`/cities/${id}`}>
+              <button className="button is-success">See more!</button>
+            </Link>
           </div>
         </div>
       </div>
