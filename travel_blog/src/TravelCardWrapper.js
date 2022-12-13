@@ -1,7 +1,16 @@
 import TravelCard from "./TravelCard";
-import travelCardData from "./travellocations.json";
+import { useState, useEffect } from "react";
+// import travelCardData from "./travellocations.json";
 
 function TravelCardWrapper() {
+  const [travelCardData, settravelCardData] = useState([]);
+  useEffect(() => {
+    fetch("http://localhost:3001/")
+      .then((result) => result.json())
+      .then((data) => {
+        settravelCardData(data);
+      });
+  }, []);
   return (
     <div className="column">
       <div className="block">

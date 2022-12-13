@@ -2,11 +2,20 @@ import Map, { Marker, NavigationControl, Popup } from "react-map-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import travelLocationData from "./travellocations.json";
 import "./Map.css";
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import Pin from "./Pin";
 import { Link } from "wouter";
 
-function MapOverview(id) {
+function MapOverview() {
+  // const [travelLocationData, settravelLocationData] = useState([]);
+  // useEffect(() => {
+  //   fetch("http://localhost:3001/")
+  //     .then((result) => result.json())
+  //     .then((data) => {
+  //       console.log(data);
+  //       settravelLocationData(data);
+  //     });
+  // }, []);
   const [selectedMarker, setSelectedMarker] = useState(null);
   const viewport = {
     longitude: travelLocationData[0]?.longitude,

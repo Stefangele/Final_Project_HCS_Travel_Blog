@@ -1,7 +1,16 @@
 import travelCardData from "./travellocations.json";
 import { Link } from "wouter";
+import { useState, useEffect } from "react";
 
 function TravelCard() {
+  const [travelCardData, settravelCardData] = useState([]);
+  useEffect(() => {
+    fetch("http://localhost:3001/")
+      .then((result) => result.json())
+      .then((data) => {
+        settravelCardData(data);
+      });
+  }, []);
   return travelCardData.map((travelCard, id) => (
     <>
       <div className="tile is-parent box is-6">
