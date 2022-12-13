@@ -9,6 +9,7 @@ import ColorBlock from "./ColorBlock";
 import TravelCardDetailPage from "./TravelCardDetailPage";
 import { Route, Switch } from "wouter";
 import Contact from "./Contact";
+import Slideshow from "./Slideshow";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Hero />
             <ColorBlock />
             <TravelLocationsOverviewAndWorldMap />
+            <Slideshow />
           </>
         </Route>
         <Route path="/contact" component={Contact} />
