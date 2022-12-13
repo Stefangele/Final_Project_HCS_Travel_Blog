@@ -9,7 +9,9 @@ import ColorBlock from "./ColorBlock";
 import TravelCardDetailPage from "./TravelCardDetailPage";
 import { Route, Switch } from "wouter";
 import Contact from "./Contact";
-import Slideshow from "./Slideshow";
+import SlideshowAboutMeWrapper from "./SlideshowAboutMeWrapper";
+import HomeParallax from "./HomeParallax";
+import URLNotFoundPage from "./URLNotFoundPage";
 
 function App() {
   return (
@@ -21,14 +23,17 @@ function App() {
             <Hero />
             <ColorBlock />
             <TravelLocationsOverviewAndWorldMap />
-            <Slideshow />
+            <HomeParallax />
+            <SlideshowAboutMeWrapper />
           </>
         </Route>
         <Route path="/contact" component={Contact} />
         <Route path="/cities/:id">
           {(params) => <TravelCardDetailPage id={params.id} />}
         </Route>
-        <Route>404 page</Route>
+        <Route>
+          <URLNotFoundPage />
+        </Route>
       </Switch>
       <Footer />
     </>

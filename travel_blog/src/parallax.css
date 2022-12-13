@@ -1,0 +1,17 @@
+hr.content-divider {
+  max-width: 75px;
+  height: 5px;
+}
+
+#parallax {
+  background: url(https://www.bmel.de/SharedDocs/Bilder/EN/Verteilerseiten/forests-in-germany.jpg?__blob=poster&v=4),
+    linear-gradient(52deg, #42475c 0%, #20222e 71%);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#parallax hr {
+  background: rgba(72, 199, 142, 0.52);
+}

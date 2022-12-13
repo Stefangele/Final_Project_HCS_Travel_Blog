@@ -2,7 +2,7 @@ function AboutMe() {
   return (
     <div className="column m-5 is-flex is-flex-direction-column is-align-items-center ">
       <h2 className="title is-2 has-text-centered">About me!</h2>
-      <p>
+      <p className="m-5">
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
         eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
         voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
@@ -19,7 +19,6 @@ function AboutMe() {
       </p>
       <figure className="mt-6">
         <img
-          className="mt-3"
           src="/author_image_cropped.png"
           alt="Author"
           style={{
