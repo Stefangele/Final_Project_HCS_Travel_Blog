@@ -4,6 +4,10 @@
   cursor: pointer;
 }
 
+.mapboxgl-popup-content {
+  width: 300px;
+}
+
 .mapboxgl-popup-close-button {
   /* position: absolute;
   right: 32px;

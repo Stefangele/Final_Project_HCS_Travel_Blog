@@ -6,7 +6,7 @@ import { useState, useMemo } from "react";
 import Pin from "./Pin";
 import { Link } from "wouter";
 
-function MapOverview() {
+function MapOverview(id) {
   const [selectedMarker, setSelectedMarker] = useState(null);
   const viewport = {
     longitude: travelLocationData[0]?.longitude,
@@ -51,7 +51,7 @@ function MapOverview() {
             anchor="top"
             latitude={selectedMarker.latitude}
             longitude={selectedMarker.longitude}
-            maxWidth="700px"
+            maxWidth="900px"
             onClose={() => setSelectedMarker(null)}
           >
             <div className="card">
@@ -72,7 +72,9 @@ function MapOverview() {
                     <p className="title is-5 has-text-centered">
                       {selectedMarker.city}
                     </p>
-                    <p className="is-size-6 ">{selectedMarker.traveldate}</p>
+                    <p className="is-size-6 has-text-centered">
+                      Traveldate: {selectedMarker.traveldate}
+                    </p>
                   </div>
                 </div>
                 <div class="has-text-centered">
