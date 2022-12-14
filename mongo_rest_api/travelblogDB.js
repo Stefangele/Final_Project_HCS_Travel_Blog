@@ -15,6 +15,18 @@ async function findAllData() {
   return findResult;
 }
 
+async function findAllDataSlideshow() {
+  await client.connect();
+  console.log("Connected successfully to server");
+  const db = client.db(dbName);
+  const collection = db.collection("slideshow_data");
+
+  const findResult = await collection.find({}).toArray();
+
+  return findResult;
+}
+
 module.exports = {
   findAllData,
+  findAllDataSlideshow,
 };

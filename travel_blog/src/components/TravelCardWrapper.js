@@ -1,6 +1,5 @@
 import TravelCard from "./TravelCard";
 import { useState, useEffect } from "react";
-// import travelCardData from "./travellocations.json";
 
 function TravelCardWrapper() {
   const [travelCardData, settravelCardData] = useState([]);

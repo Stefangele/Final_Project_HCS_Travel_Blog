@@ -1,4 +1,3 @@
-// import travelCardData from "./travellocations.json";
 import { Link } from "wouter";
 import { useState, useEffect } from "react";
 
