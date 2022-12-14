@@ -1,7 +1,9 @@
 import { FaDoorOpen, FaEdit } from "react-icons/fa";
 import { Link } from "wouter";
+import React from "react";
 
 function Navbar() {
+  const [isActive, setisActive] = React.useState(false);
   return (
     <nav className="navbar" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
@@ -11,8 +13,11 @@ function Navbar() {
           </a>
         </Link>
         <a
+          onClick={() => {
+            setisActive(!isActive);
+          }}
           role="button"
-          className="navbar-burger"
+          className={`navbar-burger burger ${isActive ? "is-active" : ""}`}
           aria-label="menu"
           aria-expanded="false"
           data-target="navbarBasicExample"
@@ -23,7 +28,10 @@ function Navbar() {
         </a>
       </div>
 
-      <div id="navbarBasicExample" className="navbar-menu">
+      <div
+        id="navbarBasicExample"
+        className={`navbar-menu ${isActive ? "is-active" : ""}`}
+      >
         <div className="navbar-start">
           <Link href="/">
             <a className="navbar-item">Nature Travel Blog</a>
