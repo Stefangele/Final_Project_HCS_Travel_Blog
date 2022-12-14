@@ -15,11 +15,6 @@ app.get("/", async function (req, res) {
   res.json(result);
 });
 
-// app.get("/pictures", async function (req, res) {
-//   const result = await travelblogDB.findAllDataSlideshow();
-//   res.json(result);
-// });
-
 app.listen(port, function () {
   console.log(`Listening on port ${port}`);
 });

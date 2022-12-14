@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "react-slideshow-image/dist/styles.css";
 import { Zoom } from "react-slideshow-image";
-import slideshowPictures from "../data/pictures_slideshow_home.json";
 import "../styles/slideshow.css";
 
 function Slideshow() {
+  const [slideshowPictures, setslideshowPictures] = useState([]);
+  useEffect(() => {
+    fetch("http://localhost:3001/pictures")
+      .then((result) => result.json())
+      .then((data) => {
+        setslideshowPictures(data);
+      });
+  }, []);
   const zoomOutProperties = {
     duration: 5000,
     transitionDuration: 500,

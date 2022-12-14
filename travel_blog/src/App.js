@@ -12,6 +12,7 @@ import Contact from "./components/Contact";
 import SlideshowAboutMeWrapper from "./components/SlideshowAboutMeWrapper";
 import HomeParallax from "./components/HomeParallax";
 import URLNotFoundPage from "./components/URLNotFoundPage";
+import NewPostPage from "./components/NewPostPage";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Route path="/cities/:id">
           {(params) => <TravelCardDetailPage id={params.id} />}
         </Route>
+        <Route parth="/new" component={NewPostPage} />
         <Route>
           <URLNotFoundPage />
         </Route>

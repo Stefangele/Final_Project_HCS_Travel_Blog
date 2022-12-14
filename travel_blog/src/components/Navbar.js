@@ -44,11 +44,13 @@ function Navbar() {
           </Link>
           <div className="navbar-item">
             <div className="buttons">
-              <a className="button is-success">
-                <strong>
-                  <FaEdit /> &nbsp;New Post
-                </strong>
-              </a>
+              <Link href="/new">
+                <a className="button is-success">
+                  <strong>
+                    <FaEdit /> &nbsp;New Post
+                  </strong>
+                </a>
+              </Link>
               <a className="button is-dark">
                 <FaDoorOpen /> &nbsp;&nbsp;Log in
               </a>
