@@ -1,7 +1,7 @@
 import Map, { Marker, NavigationControl, Popup } from "react-map-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import travelLocationData from "./travellocations.json";
-import "./Map.css";
+import "./map.css";
 import { useState, useMemo, useEffect } from "react";
 import Pin from "./Pin";
 import { Link } from "wouter";

@@ -1,4 +1,4 @@
-import "./App.css";
+import "./hero.css";
 import "mapbox-gl/dist/mapbox-gl.css";
 import "bulma/css/bulma.min.css";
 import Navbar from "./Navbar";

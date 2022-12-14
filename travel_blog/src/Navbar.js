@@ -7,7 +7,7 @@ function Navbar() {
       <div className="navbar-brand">
         <Link href="/">
           <a className="navbar-item">
-            <img src="/Logo.jpg" width="100" height="100" />
+            <img src="/Logo.jpg" width="100" height="100" alt="Logo" />
           </a>
         </Link>
         <a
