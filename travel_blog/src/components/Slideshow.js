@@ -1,8 +1,8 @@
 import React from "react";
 import "react-slideshow-image/dist/styles.css";
 import { Zoom } from "react-slideshow-image";
-import slideshowPictures from "./pictures_slideshow_home.json";
-import "./slideshow.css";
+import slideshowPictures from "../data/pictures_slideshow_home.json";
+import "../styles/slideshow.css";
 
 function Slideshow() {
   const zoomOutProperties = {
@@ -29,6 +29,7 @@ function Slideshow() {
                 key={index}
                 style={{ width: "100%", height: "90vh" }}
                 src={slideshowItmes.image}
+                alt={slideshowItmes.description}
               />
               <h3 className="subtitle is-5 has-text-centered">
                 {slideshowItmes.description}

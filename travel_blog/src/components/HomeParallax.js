@@ -1,4 +1,4 @@
-import "./parallax.css";
+import "../styles/parallax.css";
 
 function HomeParallax() {
   return (

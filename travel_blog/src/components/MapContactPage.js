@@ -1,6 +1,6 @@
 import Map, { Marker } from "react-map-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
-import "./map.css";
+import "../styles/map.css";
 
 function MapContactPage() {
   return (

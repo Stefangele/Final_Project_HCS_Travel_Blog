@@ -1,8 +1,8 @@
-import travelCardData from "./travellocations.json";
+import travelCardData from "../data/travellocations.json";
 import { Link } from "wouter";
 import Map, { Marker } from "react-map-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
-import "./map.css";
+import "../styles/map.css";
 import Pin from "./Pin";
 
 function TravelCardDetailPage({ id }) {

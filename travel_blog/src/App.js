@@ -1,17 +1,17 @@
-import "./hero.css";
+import "./styles/hero.css";
 import "mapbox-gl/dist/mapbox-gl.css";
 import "bulma/css/bulma.min.css";
-import Navbar from "./Navbar";
-import Hero from "./Hero";
-import TravelLocationsOverviewAndWorldMap from "./TravelLocationsOverviewAndWorldMap";
-import Footer from "./Footer";
-import ColorBlock from "./ColorBlock";
-import TravelCardDetailPage from "./TravelCardDetailPage";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import TravelLocationsOverviewAndWorldMap from "./components/TravelLocationsOverviewAndWorldMap";
+import Footer from "./components/Footer";
+import ColorBlock from "./components/ColorBlock";
+import TravelCardDetailPage from "./components/TravelCardDetailPage";
 import { Route, Switch } from "wouter";
-import Contact from "./Contact";
-import SlideshowAboutMeWrapper from "./SlideshowAboutMeWrapper";
-import HomeParallax from "./HomeParallax";
-import URLNotFoundPage from "./URLNotFoundPage";
+import Contact from "./components/Contact";
+import SlideshowAboutMeWrapper from "./components/SlideshowAboutMeWrapper";
+import HomeParallax from "./components/HomeParallax";
+import URLNotFoundPage from "./components/URLNotFoundPage";
 
 function App() {
   return (
